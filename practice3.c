@@ -11,3 +11,17 @@ int lengthOfLastWord(char* s) {
     return size;
 
 }
+void swap(char *x, char *y){
+    char tmp=*x;
+    *x=*y;
+    *y=tmp;
+}
+void reverseString(char* s, int sSize) {
+    int i=0;
+    int j=sSize-1;
+    while(i<j){
+        swap(&s[i],&s[j]);
+        i++;
+        j--;
+    }
+}
